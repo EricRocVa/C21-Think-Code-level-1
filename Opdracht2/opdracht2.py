@@ -1,6 +1,5 @@
 # syntax error
-print(Hello world)
-
+print("ello world")
 # runtime error
 10 * (2/0)
 
