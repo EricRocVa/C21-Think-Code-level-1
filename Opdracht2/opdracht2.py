@@ -4,5 +4,5 @@ print("Hello world")
 #10 * (2/0)
 
 # semantic error
-name = "Alice"
+name = input ("Alice")
 print("Hello name")
