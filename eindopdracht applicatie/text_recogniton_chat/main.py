@@ -1,4 +1,4 @@
-#ik heb ook een kleine easter egg toegevoegd probeer er maar achter te komen wat het is 
+#Ik heb ook een kleine easter egg toegevoegd probeer hem maar te vinden XD.
 import re
 import long_responses as long
 
@@ -41,12 +41,14 @@ def check_all_messages(message):
     response('See you!', ['bye', 'goodbye'], single_response=True)
     response('I\'m doing fine, and you?', ['how', 'are', 'you', 'doing'], required_words=['how'])
     response('You\'re welcome!', ['thank', 'thanks'], single_response=True)
-    response('Thank you!', ['i', 'love', 'code', 'palace'], required_words=['code', 'palace'])
-    response()
+    response('that\'s nice', ['html', 'css', 'javascript', 'python'], required_words=['html'])
     # Longer responses
     response(long.R_ADVICE, ['give', 'advice'], required_words=['advice'])
     response(long.R_EATING, ['what', 'you', 'eat'], required_words=['you', 'eat'])
-    response(long.R_NAMES, ['what', 'your', 'name'], required_words=['your', 'name'])
+    response(long.R_NAME, ['what', 'your', 'name'], required_words=['your', 'name'])
+    response(long.R_LANGUAGE, [ 'I', 'love', 'conding'], required_words=['love', 'coding'])
+    response(long.R_SAD, [ 'I', 'am', 'sad'], required_words=['sad'])
+    
 
     best_match = max(highest_prob_list, key=highest_prob_list.get)
     # print(highest_prob_list)
